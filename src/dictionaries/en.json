@@ -1,0 +1,47 @@
+{
+    "common": {
+        "bookNow": "Book Now",
+        "contactUs": "Contact Us",
+        "viewDetails": "View Details",
+        "back": "Back",
+        "next": "Next",
+        "submit": "Submit",
+        "loading": "Loading...",
+        "pricePerDay": "/ 24h",
+        "from": "From"
+    },
+    "nav": {
+        "lineup": "Lineup",
+        "howto": "How to Rent",
+        "price": "Price & Options",
+        "faq": "FAQ",
+        "access": "Access",
+        "contact": "Contact"
+    },
+    "home": {
+        "heroTitle": "Discover the Real Japan \n with CampBase",
+        "heroSubtitle": "Your journey begins here. Experience freedom, nature, and comfort.",
+        "whyChoose": "Why Choose CampBase?",
+        "whyChooseSubtitle": "We provide the best campervan experience for your Japan trip.",
+        "features": {
+            "safe": {
+                "title": "Safe & Reliable",
+                "desc": "All vehicles are fully insured and regularly maintained for your safety and peace of mind."
+            },
+            "comfort": {
+                "title": "Comfortable Stay",
+                "desc": "Equipped with high-quality bedding and amenities to ensure a comfortable sleep anywhere."
+            },
+            "freedom": {
+                "title": "Freedom to Explore",
+                "desc": "Go where you want, when you want. Discover hidden gems off the beaten path."
+            }
+        }
+    },
+    "search": {
+        "pickupDate": "Pickup Date",
+        "returnDate": "Return Date",
+        "people": "People",
+        "search": "Search"
+    }
+}

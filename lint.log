@@ -1,0 +1,26 @@
+
+> campbase@0.1.0 lint
+> eslint
+
+
+C:\Users\aknr1\MyApps\campbase\src\app\[lang]\booking\page.tsx
+   13:49  error    Unexpected any. Specify a different type                                                                               @typescript-eslint/no-explicit-any
+  178:1   warning  Prevent Client Components from being async functions. See: https://nextjs.org/docs/messages/no-async-client-component  @next/next/no-async-client-component
+
+C:\Users\aknr1\MyApps\campbase\src\app\[lang]\page.tsx
+  2:31  warning  'Heart' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\aknr1\MyApps\campbase\src\components\features\SearchBox.tsx
+  7:45  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\aknr1\MyApps\campbase\src\components\features\VehicleCard.tsx
+  17:85  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\aknr1\MyApps\campbase\src\components\layout\Footer.tsx
+  3:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\aknr1\MyApps\campbase\src\components\layout\Header.tsx
+  11:48  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+笨・7 problems (5 errors, 2 warnings)
+

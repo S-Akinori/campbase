@@ -1,0 +1,73 @@
+
+> campbase@0.1.0 build
+> next build
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+ 笞 Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\aknr1\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\aknr1\MyApps\campbase\package-lock.json
+
+   笆ｲ Next.js 16.0.5 (Turbopack)
+
+ 笞 The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+   Creating an optimized production build ...
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+
+> Build error occurred
+Error: Turbopack build failed with 3 errors:
+./MyApps/campbase/src/lib/dictionary.ts:1:1
+Ecmascript file had an error
+> 1 | import "server-only";
+    | ^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const dictionaries = {
+  4 |     en: () => import("@/dictionaries/en.json").then((module) => module.default),
+
+You're importing a component that needs "server-only". That only works in a Server Component which is not supported in the pages/ directory. Read more: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+
+
+
+Import traces:
+  Server Component:
+    ./MyApps/campbase/src/lib/dictionary.ts
+    ./MyApps/campbase/src/app/[lang]/page.tsx
+
+  Client Component Browser:
+    ./MyApps/campbase/src/lib/dictionary.ts [Client Component Browser]
+    ./MyApps/campbase/src/app/[lang]/booking/page.tsx [Client Component Browser]
+    ./MyApps/campbase/src/app/[lang]/booking/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./MyApps/campbase/src/lib/dictionary.ts [Client Component SSR]
+    ./MyApps/campbase/src/app/[lang]/booking/page.tsx [Client Component SSR]
+    ./MyApps/campbase/src/app/[lang]/booking/page.tsx [Server Component]
+
+
+./MyApps/campbase/src/app/[lang]/layout.tsx:3:1
+Module not found: Can't resolve '../../globals.css'
+  1 | import type { Metadata } from "next";
+  2 | import { Geist, Geist_Mono } from "next/font/google";
+> 3 | import "../../globals.css";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { Header } from "@/components/layout/Header";
+  5 | import { Footer } from "@/components/layout/Footer";
+  6 | import { getDictionary } from "@/lib/dictionary";
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./MyApps/campbase/src/lib
+Invalid import
+'server-only' cannot be imported from a Client Component module. It should only be used from a Server Component.
+The error was caused by importing 'MyApps/campbase/src/lib'
+
+
+
+    at <unknown> (./MyApps/campbase/src/lib/dictionary.ts:1:1)
+    at <unknown> (./MyApps/campbase/src/app/[lang]/layout.tsx:3:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
